@@ -87,3 +87,22 @@ section a:hover
 {
     color: #ffffff;
 }
+
+@media (max-width: 600px)
+{
+    body
+    {
+        margin: 10px;
+    }
+
+    img
+    {
+        width: 100%;
+    }
+
+    nav a
+    {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
