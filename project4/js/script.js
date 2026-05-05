@@ -1,10 +1,14 @@
-document.getElementById("userForm").addEventListener("submit", function(event) {
+document.addEventListener("DOMContentLoaded", function() {
 
-    event.preventDefault();
+    const form = document.getElementById("userForm");
+    const input = document.getElementById("username");
+    const greeting = document.getElementById("greeting");
 
-    let name = document.getElementById("username").value;
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
 
-    document.getElementById("greeting").textContent =
-        "Welcome, " + name + "! Ready to build some ships in Space Engineers?";
+        greeting.textContent =
+            "Welcome, " + input.value + "! Ready to build some ships in Space Engineers?";
+    });
 
 });
